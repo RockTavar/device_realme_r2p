@@ -141,6 +141,7 @@ PRODUCT_PACKAGES += \
     audio.bluetooth.default \
     libbluetooth_audio_session \
     libbthost_if \
+    libldacBT_bco \
     vendor.qti.hardware.btconfigstore@1.0.vendor
 
 # Camera
