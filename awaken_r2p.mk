@@ -12,13 +12,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 # Inherit from r2p device
 $(call inherit-product, device/realme/r2p/device.mk)
 
-# Inherit some AOSP stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-TARGET_GAPPS_ARCH := arm64
+# Inherit some AwakenOS stuff
+$(call inherit-product, vendor/awaken/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
+# Extras
+AWAKEN_BUILD_TYPE := OFFICIAL
+USE_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_r2p
+PRODUCT_NAME := awaken_r2p
 PRODUCT_DEVICE := r2p
 PRODUCT_MANUFACTURER := OPPO
 PRODUCT_BRAND := OPPO
