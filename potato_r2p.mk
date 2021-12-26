@@ -13,12 +13,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 $(call inherit-product, device/realme/r2p/device.mk)
 
 # Inherit some AOSP stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-TARGET_GAPPS_ARCH := arm64
+$(call inherit-product, vendor/potato/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_r2p
+PRODUCT_NAME := potato_r2p
 PRODUCT_DEVICE := r2p
 PRODUCT_MANUFACTURER := OPPO
 PRODUCT_BRAND := OPPO

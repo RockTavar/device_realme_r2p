@@ -1,0 +1,10 @@
+[
+  {
+    "repository" : "vendor_realme_r2p",
+    "target_path": "vendor/realme/r2p"
+  },
+  {
+    "repository" : "kernel_realme_sdm660",
+    "target_path": "kernel/realme/sdm660"
+  }
+]
