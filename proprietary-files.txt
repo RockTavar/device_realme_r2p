@@ -2660,7 +2660,6 @@ vendor/etc/init/imsqmidaemon.rc
 vendor/etc/init/imsrcsd.rc
 vendor/etc/init/init.qdmastats.rc
 vendor/etc/init/port-bridge.rc
-vendor/etc/init/qcrild.rc
 
 # Init - from RMX1801EX_11.F.12 - modified
 vendor/etc/init/netmgrd.rc|213d147cfcfe175aa4cdf1a345f3b148ea72982d
@@ -2949,8 +2948,14 @@ product/framework/QtiTelephonyServicelibrary.jar|ea30b05eaad3ebee157421b3f31bf85
 product/framework/qcrilhook.jar|4eece9eb40a8976d2fd9a6a4d5d6dfea0c7674f5
 -product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|20c011ffc54539161fa7cc05c55c9c5ed3f936b4
 
+# Radio (QCRIL) - from m690-user 11 RKQ1.210607.001 00WW_3_440 release-keys
+vendor/bin/hw/qcrild|77d0168fbad7db01eec8abd9df25f19c05411eb4
+vendor/etc/init/qcrild.rc|17cf4934bf443cf6469d8b3ff622eeb0e4a0aac6
+vendor/lib64/libqcrilFramework.so|dc62bd4f3685c420d43f4f5f4141d5908212df86
+vendor/lib64/libril-qc-hal-qmi.so|09865dc82b52325949511f856bab308a791e9e68
+vendor/lib64/qcrild_librilutils.so|f12ebc05420621d930ffe7f4b4859117e3c9fc35
+
 # Radio
-vendor/bin/hw/qcrild
 vendor/bin/ATFWD-daemon
 vendor/bin/netmgrd
 vendor/bin/port-bridge
@@ -2973,11 +2978,9 @@ vendor/lib64/liboemaids_vendor.so
 vendor/lib64/libpdmapper.so
 vendor/lib64/libpdnotifier.so
 vendor/lib64/libqcmaputils.so
-vendor/lib64/libqcrilFramework.so
 vendor/lib64/libqcrildatactl.so
 vendor/lib64/libqrtr.so
 vendor/lib64/libqsocket.so
-vendor/lib64/libril-qc-hal-qmi.so
 vendor/lib64/libril-qc-ltedirectdisc.so
 vendor/lib64/libril-qc-qmi-1.so
 vendor/lib64/libril-qc-radioconfig.so
@@ -2985,7 +2988,6 @@ vendor/lib64/libril-qcril-hook-oem.so
 vendor/lib64/librilqmiservices.so
 vendor/lib64/libsettings.so
 vendor/lib64/libsystem_health_mon.so
-vendor/lib64/qcrild_librilutils.so
 vendor/lib64/vendor.qti.hardware.radio.am@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so
