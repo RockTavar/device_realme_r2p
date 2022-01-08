@@ -12,9 +12,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 # Inherit from r2p device
 $(call inherit-product, device/realme/r2p/device.mk)
 
-# Inherit some PixelOS stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-TARGET_BOOT_ANIMATION_RES := 1080
+# Inherit some voltageOS stuff
+$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
+TARGET_BOOT_ANIMATION_RES := 720
 
 # Extras
 TARGET_GAPPS_ARCH := arm64
@@ -22,7 +22,7 @@ TARGET_INCLUDE_LIVE_WALLPAPERS := true
 TARGET_INCLUDE_STOCK_ARCORE := tue
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_r2p
+PRODUCT_NAME := voltage_r2p
 PRODUCT_DEVICE := r2p
 PRODUCT_MANUFACTURER := OPPO
 PRODUCT_BRAND := OPPO
