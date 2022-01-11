@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_r2p.mk
+    $(LOCAL_DIR)/voltage_r2p.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_r2p-user \
-    aosp_r2p-userdebug \
-    aosp_r2p-eng
+    voltage_r2p-user \
+    voltage_r2p-userdebug \
+    voltage_r2p-eng
